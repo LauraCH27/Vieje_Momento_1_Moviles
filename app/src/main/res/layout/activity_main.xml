@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_500"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="VIAJE"
+                android:textColor="#8C9EFF"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="CODIGO DEL VIAJE"
+                android:textColor="#0C0C0C"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etcodigo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:hint="1234"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="#171616"
+                android:textColorHint="#AEAAAA"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="CIUDAD DE DESTINO"
+                android:textColor="#0C0C0C"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etciudad"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:hint="Medellin"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="#171616"
+                android:textColorHint="#DFDADA"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="CANTIDAD DE PERSONAS"
+                android:textColor="#0C0C0C"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etcantidad"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:hint="20 personas"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="#171616"
+                android:textColorHint="#DFDADA"
+                android:textColorLink="#DFDADA"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="VALOR POR PERSONA"
+                android:textColor="#0C0C0C"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/etvalor"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:hint="$40.000"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="#171616"
+                android:textColorHint="#DFDADA"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/activo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:checked="false"
+                android:enabled="false"
+                android:text="  Activo"
+                android:textSize="20dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textAlignment="center"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#F3EFEF">
+
+                    <Button
+                        android:id="@+id/btguardar"
+                        android:layout_width="227dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:onClick="Guardar"
+                        android:text="GUARDAR"
+                        android:textColor="#DFDADA"
+                        android:textSize="20sp"
+                        app:cornerRadius="15dp" />
+
+                    <Button
+                        android:id="@+id/btcosultar"
+                        android:layout_width="194dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="Consultar"
+                        android:text="CONSULTAR"
+                        android:textColor="#DFDADA"
+                        android:textSize="20sp"
+                        app:cornerRadius="20dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#F3EFEF"
+                    android:textAlignment="center">
+
+                    <Button
+                        android:id="@+id/btanular"
+                        android:layout_width="227dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:onClick="Anular"
+                        android:text="ANULAR"
+                        android:textColor="#DFDADA"
+                        android:textSize="20sp"
+                        app:cornerRadius="15dp" />
+
+                    <Button
+                        android:id="@+id/btcancelar"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="Cancelar"
+                        android:text="CANCELAR"
+                        android:textColor="#DFDADA"
+                        android:textSize="20sp"
+                        app:cornerRadius="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#F3EFEF"
+                    android:textAlignment="center">
+
+                    <Button
+                        android:id="@+id/btregresar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_span="2"
+                        android:baselineAligned="false"
+                        android:onClick="Regresar"
+                        android:text="REGRESAR"
+                        android:textColor="#DFDADA"
+                        android:textSize="20sp"
+                        app:cornerRadius="15dp" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>
